@@ -1,0 +1,26 @@
+<div class="container"><h1>
+Update recipe</h1>
+<hr>
+<form class= bgcolor (ngSubmit) = upDateRecipe(newRecipe._id,newRecipe)>
+<label for="name">Name</label>
+<input [(ngModel)] ="newRecipe.name" id="name" name="name" required="required" value="{{newRecipe.name}}">
+	<br><br>
+    <label for="type">Type</label>
+<input [(ngModel)] ="newRecipe.type" id="type" name="type" required="required">
+	<br><br>
+    <label for="category">Category</label>
+<input [(ngModel)] ="newRecipe.category" id="category" name="category" required="required">
+	<br><br>
+    <label for="preparationTime">PreparationTime</label>
+<input [(ngModel)] ="newRecipe.preparationTime" id="preparationTime" name="preparationTime" required="required">	
+	<br><br>
+    <label for="ingredients">Ingredients</label>
+<input [(ngModel)] ="newRecipe.ingredients" id="ingredients" name="ingredients" required="required">	<br><br>
+    <label for="nutrition">Nutrition</label>
+<input [(ngModel)] ="newRecipe.nutrition" id="type" name="nutrition" required="nutrition">	
+	<br><br>
+    <button type="submit" class="registerbtn">update</button><br>
+	<br>
+</form>
+	</div>
+

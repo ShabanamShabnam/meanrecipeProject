@@ -1,0 +1,7 @@
+<div class="cd">
+	<h2>Our Best Recipes:</h2>
+	<div class="cd2">
+	<div *ngFor="let recipe of recipes"><a class="linkColor" routerLink="/recipes/{{recipe._id}}">{{recipe.name}}</a>
+			</div>
+	</div>
+</div>
